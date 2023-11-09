@@ -14,7 +14,7 @@
 
 
 <body>
-<!-- ____________navbar section_______start________ -->
+  <!-- ____________navbar section_______start________ -->
   <nav class="white z-depth-0 top_navbar">
     <div class="nav-wrapper">
       <a href="#" class="blue-text hide-on-med-and-up">User managment</a>
@@ -49,40 +49,82 @@
   <!-- ____________navbar section_______end________ -->
 
 
-<!-- ____________content section_______start________ -->
+  <!-- ____________content section_______start________ -->
 
-<section id="top_actions_section" class="row">
+  <section id="top_actions_section" class="row m-b-0">
 
-<!-- ____________add button_______________ -->
+    <!-- ____________add button_______________ -->
 
-<div class="p-l-10 p-r-10 p-t-10 col s12 m3 l2">
-<button class="waves-effect waves-light btn blue darken-2 rounded_pill p-l-30 p-r-30 w-full flex-c">
-<i class="material-icons m-r-5">add</i>
-ADD USER
-</button>
-</div>
+    <div class="p-l-10 p-r-10 p-t-10 col s12 m3 l2">
+      <button class="waves-effect waves-light btn blue darken-2 rounded_pill p-l-30 p-r-30 w-full flex-c">
+        <i class="material-icons m-r-5">add</i>
+        ADD USER
+      </button>
+    </div>
 
-<!-- ____________search_______________ -->
 
-<div class="row col s12 m9 l8">
-        <div class="input-field col s12">
-          <input   id="search" type="text" class="validate">
-          <label for="search">
+    <!-- ____________search_______________ -->
+
+    <div class="row col s12 m9 l8 m-b-0">
+      <div class="input-field col s12">
+        <input id="search" type="text" class="validate">
+        <label for="search">
           <li class="material-icons pos-relative top-7">search</li>
-          search</label>
+          search
+        </label>
+      </div>
+    </div>
+
+    <div class="col l2 hide-on-med-and-downg">
+    </div>
+
+
+  </section>
+
+  <!-- ____________content section_______end________ -->
+
+
+  <!-- ____________user list section_______start________ -->
+  <section class="user_list_section">
+    <ul class="collapsible">
+
+      <li class="user_list_item">
+        <div class="collapsible-header">
+          <i class="material-icons blue-text darken-2 user_list_arrow_icon trans-0-2">arrow_drop_down_circle</i>
+          omid
         </div>
-      </div>
+        <div class="collapsible-body">
 
-      <div class="col l2 hide-on-med-and-down">
-      </div>
-</section>
+          <div class="p-all-5">
+            <span class="f-bold">Username:</span>
+            <span>omid20boy</span>
+          </div>
 
-<!-- ____________content section_______end________ -->
+          <div class="p-all-5">
+            <span class="f-bold">Email:</span>
+            <span>omid.ayoubzadeh@gmail.com</span>
+          </div>
 
+          <div class="p-all-5">
+            <span class="f-bold">Address:</span>
+            <span>Bushehr</span>
+          </div>
 
+          <div class="p-all-5">
+            <span class="f-bold">Action:</span>
+            <i class="material-icons red-text m-l-5 m-r-5">delete_forever</i>
+            <i class="material-icons orange-text darken-3 m-l-5 m-r-5">edit</i>
+          </div>
+
+          </div>
+      </li>
+    </ul>
+
+  </section>
 
   <script src="/assets/materialize/js/materialize.min.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/users.js"></script>
 </body>
 
 </html>
