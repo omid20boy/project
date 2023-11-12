@@ -56,7 +56,7 @@
     <!-- ____________add button_______________ -->
 
     <div class="p-l-10 p-r-10 p-t-10 col s12 m3 l2">
-      <button class="waves-effect waves-light btn blue darken-2 rounded_pill p-l-30 p-r-30 w-full flex-c">
+      <button id="add_user_button" class="waves-effect waves-light btn blue darken-2 rounded_pill p-l-30 p-r-30 w-full flex-c">
         <i class="material-icons m-r-5">add</i>
         ADD USER
       </button>
@@ -81,10 +81,7 @@
 
   </section>
 
-  <!-- ____________content section_______end________ -->
-
-
-  <!-- ____________user list section_______start________ -->
+  <!-- ____________user list section___________ -->
   <section class="user_list_section">
     <ul class="collapsible hide-on-med-and-up">
 
@@ -118,7 +115,6 @@
 
         </div>
       </li>
-
 
       <li class="user_list_item">
         <div class="collapsible-header">
@@ -224,7 +220,8 @@
 
     <!-- --------page counte--------- -->
 
-    <div class="pagination_container container p-l-9 p-r-9 p-t-10 p-b-15 flex-sb-m pos-fixed left-0 right-0 bottom-0 z-depth-4 rounded_top_30">
+    <div
+      class="pagination_container container p-l-9 p-r-9 p-t-10 p-b-15 flex-sb-m pos-fixed left-0 right-0 bottom-0 z-depth-4 rounded_top_30">
       <div class="pagination_item_counts flex-l p-l-10 flex-l-m">
         showing
         <span m-l-5 m-r-5 max-w-50>
@@ -235,13 +232,53 @@
       </div>
 
       <div class="pagination_buttons">
-      <i class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill">keyboard_arrow_left</i>
-      <i class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill">keyboard_arrow_right</i>
+        <i
+          class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill">keyboard_arrow_left</i>
+        <i
+          class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill">keyboard_arrow_right</i>
       </div>
 
     </div>
 
+
+
   </section>
+
+  <div class="add_user_modal_back dis-none"></div>
+  <div class="add_user_modal container rounded_top_30 trans-0-2">
+    <div class="row p-t-10 p-b-10 p-r-40 p-l-40 center-on-small-only">
+      <h5><i class="material-icons m-r-10 m-l-10 pos-relative m-t-4">person_add</i>
+        Add user
+      </h5>
+
+      <form>
+        <div class="input-field col s12">
+          <input id="name" type="text" class="validate">
+          <label for="name">Name:</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="Username" type="text" class="validate">
+          <label for="Username">Userame:</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="Email" type="text" class="validate">
+          <label for="Email">Email:</label>
+        </div>
+
+        <button class="waves-effect waves-light btn blue darken-1 w-full max-w-250 m-t-20 m-b-10 rounded_pill">
+        submit
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- ____________content section_______end________ -->
+
 
   <script src="/assets/materialize/js/materialize.min.js"></script>
   <script src="/assets/js/main.js"></script>
