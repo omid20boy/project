@@ -1,3 +1,7 @@
+*{
+  direction: rtl;
+}
+
 @media(min-width:600px){
     .top_navbar{
         box-shadow: 0 0 20px gray !important;
@@ -49,4 +53,8 @@ table.highlight > tbody > tr:hover {
   .add_user_modal.show{
     box-shadow: 0 0 10px rgba(119, 81, 255, 0.5);
     bottom: 0;
+  }
+
+  .mt-icon{
+    margin: 0 0 0 25px !important;
   }
